@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#G#",
+    "GRG",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "justamodforhackcraftv2:steel"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "justamodforhackcraftv2:steel"
+    }
+  },
+    "result": {
+      "item": "justamodforhackcraftv2:steel_casing",
+      "count": 4
+    }
+  }
