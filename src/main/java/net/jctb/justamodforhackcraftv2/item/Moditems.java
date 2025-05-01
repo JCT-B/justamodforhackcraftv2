@@ -6,6 +6,8 @@
 package net.jctb.justamodforhackcraftv2.item;
 
 import net.jctb.justamodforhackcraftv2.item.custom.DrillItem;
+import net.jctb.justamodforhackcraftv2.item.custom.FuelItem;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,7 +28,15 @@ public class Moditems {
     public static final RegistryObject<Item> STEEL_DRILL = ITEMS.register("steel_drill",
             () -> new DrillItem(ModToolTiers.STEEL, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 7, -3.5f))));
-
+    public static final RegistryObject<Item> CHARGED_STEEL_DRILL = ITEMS.register("charged_steel_drill",
+            () -> new DrillItem(ModToolTiers.CHARGED_STEEL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CHARGED_STEEL, 7, -3.5f))));
+    public static final RegistryObject<Item> ENERGIZER = ITEMS.register("energizer" ,
+            () -> new FuelItem(new Item.Properties(),300));
+    public static final RegistryObject<Item> SUPERTATER = ITEMS.register("supertater" ,
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SUPERTATER)));
+    public static final RegistryObject<Item> DRILL_BIT = ITEMS.register("drill_bit" ,
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

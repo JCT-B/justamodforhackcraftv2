@@ -66,7 +66,12 @@ public class craftthisthing
         //Event Case for adding items to the game using this condition as fetch them in ingredients as other items.
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(Moditems.STEEL);
+            event.accept(Moditems.CHARGED_STEEL_DRILL);
             event.accept(Moditems.STEEL_DRILL);
+            event.accept(Moditems.SUPERTATER);
+            event.accept(Moditems.ENERGIZER);
+            event.accept(Moditems.DRILL_BIT);
+
         }
 
 

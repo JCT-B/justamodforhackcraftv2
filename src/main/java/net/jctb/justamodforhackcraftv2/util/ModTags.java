@@ -9,9 +9,10 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> NEEDS_STEEL_TOOL = createTag("needs_alexandrite_tool");
-        public static final TagKey<Block> INCORRECT_FOR_STEEL_TOOL = createTag("incorrect_for_alexandrite_tool");
-
+        public static final TagKey<Block> NEEDS_STEEL_TOOL = createTag("needs_steel_tool");
+        public static final TagKey<Block> INCORRECT_FOR_STEEL_TOOL = createTag("incorrect_for_steel_tool");
+        public static final TagKey<Block> NEEDS_CHARGED_STEEL_TOOL = createTag("needs_charged_steel_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CHARGED_STEEL_TOOL = createTag("incorrect_for_charged_steel_tool");
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(craftthisthing.MOD_ID, name));
         }
